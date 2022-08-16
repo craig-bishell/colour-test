@@ -13,12 +13,9 @@ const ColourPalette = () => {
 
   return (
     <>
-      <Colour colour={colour1} />
-      <button onClick={() => setColour1('0x0f0f0f')}>set colour1</button>
-      <Colour colour={colour2} />
-      <button onClick={() => setColour2('0x0f0f0f')}>set colour2</button>
-      <Colour colour={colour3} />
-      <button onClick={() => setColour3('0x0f0f0f')}>set colour3</button>
+      <Colour colour={colour1} setColour={setColour1} />
+      <Colour colour={colour2} setColour={setColour2} />
+      <Colour colour={colour3} setColour={setColour3} />
     </>
   );
 };
